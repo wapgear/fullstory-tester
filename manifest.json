@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "FullStory Tester",
+  "description": "Emulates visual from FullStory Devtools interface",
+  "version": "1.0",
+  "icons": {
+    "16": "public/16.png",
+    "32": "public/32.png",
+    "64": "public/64.png",
+    "128": "public/128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "build/index.js"
+      ],
+      "css": [],
+      "matches": [
+        "http://localhost:3000/*",
+        "https://qualify.integration.theguarantors.com/*",
+        "https://qualify.staging.theguarantors.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "public/popup.html"
+  }
+}

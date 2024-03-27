@@ -1,0 +1,12 @@
+{
+  "name": "fs-tester",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "bun build ./src/* --outdir ./build --watch --loader .html:file"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.11",
+    "@types/chrome": "^0.0.263"
+  }
+}
